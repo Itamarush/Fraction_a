@@ -29,6 +29,7 @@ namespace ariel
     friend Fraction operator/(const Fraction& fraction, float value);
     friend Fraction operator/(float value, const Fraction& fraction);
     Fraction operator/(const Fraction& other) const;
+    Fraction operator*(const Fraction& other) const;
     Fraction operator++();
     Fraction operator++(int num);
     Fraction operator--();

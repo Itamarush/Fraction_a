@@ -24,7 +24,10 @@ namespace ariel{
     {
         return false;
     };
-    ostream& operator<<(ostream& ostr, const Fraction& frac);
+    ostream& operator<<(ostream& ostr, const Fraction& frac)
+    {
+        return ostr;
+    }
 
     Fraction operator+(const Fraction& frac1, const Fraction& frac2)
     {
@@ -91,4 +94,13 @@ namespace ariel{
         return Fraction();
     };
 
+    Fraction Fraction::operator/(const Fraction& other) const
+    {
+        return Fraction();        
+    };
+
+    Fraction Fraction::operator*(const Fraction& other) const
+    {
+        return Fraction();
+    };
 }
